@@ -1,0 +1,5 @@
+$module ()
+
+integer proprietario() {
+	return llDetectedKey(0) == llGetOwner();
+}

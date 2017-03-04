@@ -1,0 +1,8 @@
+$module (integer DEBUG)
+
+debug(string str) {
+	if(DEBUG) llOwnerSay(str);
+}
+notifica(string str) {
+	llSay(0,str);
+}
