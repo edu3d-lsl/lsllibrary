@@ -1,0 +1,76 @@
+string NAME_NOTECARD;
+integer COUNTER;
+integer ONLY_OWNER = TRUE;
+
+integer OnlyOwner(integer boolean)
+{
+    if (boolean && llGetOwner() != llDetectedKey(0)) return FALSE;
+    else return TRUE;
+}
+
+integer FindNotecard()
+{
+    integer n_notecard = llGetInventoryNumber(INVENTORY_NOTECARD);
+    if (n_notecard > 0) return TRUE;
+    else return FALSE;
+}
+
+string NameFirstNotecard(integer boolean)
+{
+    if (boolean)
+    {
+        string name = llGetInventoryName(INVENTORY_NOTECARD,0);
+        llOwnerSay("\nNotecard name is: " + name + "\nReady for read.");
+        return name;
+    }
+    else
+    {
+        llOwnerSay("Notecard not found");
+        return "";
+    }
+}
+
+NextNotecardLine(string name_notecard, integer counter)
+{
+    key line = llGetNotecardLine(name_notecard,counter);
+}
+
+SayLineNotecardToAll(string text, integer boolean)
+{
+    if (text == EOF) 
+    {
+        llOwnerSay("Finish!");
+        llResetScript();
+    }
+    if (boolean) llSay( 0, text);
+    else llOwnerSay( text );
+}
+
+FindNewNotecard (integer change)
+{
+    if(change & CHANGED_INVENTORY)
+    llResetScript();
+}
+
+default
+{
+    state_entry()
+    {
+        NAME_NOTECARD = NameFirstNotecard( FindNotecard() );
+    }
+    touch_start(integer total_number)
+    {
+        if(NAME_NOTECARD == "") return;
+        if(OnlyOwner( ONLY_OWNER )==FALSE) return;
+        NextNotecardLine(NAME_NOTECARD,COUNTER);
+        COUNTER ++;
+    }
+    dataserver(key key_line, string text_line)
+    {
+        SayLineNotecardToAll(text_line, FALSE);
+    }
+    changed (integer change)
+    {
+        FindNewNotecard (change);
+    }
+}
