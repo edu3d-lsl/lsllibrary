@@ -1,6 +1,6 @@
 $module ()
 
-particle_stars_01()
+particle_stars_01() //Richiede Texure stars_01.png
 {
 	llParticleSystem(
         [
