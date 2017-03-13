@@ -1,5 +1,5 @@
 // Particles_Library.ribbons.lslp 
-// 2017-03-13 23:14:12 - LSLForge (0.1.9.3) generated
+// 2017-03-13 23:30:42 - LSLForge (0.1.9.3) generated
 default {
 
     state_entry() {
