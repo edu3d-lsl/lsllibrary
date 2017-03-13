@@ -1,4 +1,4 @@
-// LSL script generated - LSLForge (0.1.6.5): Anthony.anthony-script.lslp 
+// LSL script generated - LSLForge (0.1.6.5): fortesque72-video.prova.lslp 
 // 2017-03-13 18:27:59
 
 
