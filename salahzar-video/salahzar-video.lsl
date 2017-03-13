@@ -1,10 +1,10 @@
-// LSL script generated - LSLForge (0.1.6.5): salahzar-video.salahzar-video.lslp 
-// 2017-03-13 18:27:59
+// salahzar-video.salahzar-video.lslp 
+// 2017-03-13 21:31:58 - LSLForge (0.1.9.3) generated
 
 
 default {
 
     state_entry() {
-        llOwnerSay("Hello Scripter");
-    }
+    llOwnerSay("Hello Scripter");
+  }
 }
