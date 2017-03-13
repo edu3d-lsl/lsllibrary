@@ -139,9 +139,3 @@ particle_Fire_01() //Richiede texture Fire01_.png
                 PSYS_PART_INTERP_SCALE_MASK
         ]);
     }
-    
-    //test commit
-    
-    //test commit michele
-
-	//test antonio
