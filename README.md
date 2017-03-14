@@ -2,6 +2,8 @@
 Condivisione di script fatti con LSLForge
 
 
+Spazio educativo dei corsi che si tengono in Craft, http://craft-world.org (OpenSim grid).
+
 
 ## come si fa a partecipare:
 
@@ -19,9 +21,7 @@ Condivisione di script fatti con LSLForge
 
 ## Non fast forward (conflitto) occorre fare un rebase (!)
 
-1. tasto destro sul progetto Team -> Synchronize i file in conflitto appaiono ROSSI
-1. Tasto destro, Open in Compare Editor (vi fa vedere tutti i punti di conflitto)
-1. Sanateli (oppure non fate nulla se va bene la vostra versione)
-1. Tasto destro add to index quando siete contenti
-1. Tasto destro "Mark as Merged"
+1. Fate tasto destro sul progetto team -> Pull
+1. tasto destro sui file rossi (git staging) -> Merge Tool
+1. Quando soddisfatti metteteli nella staged area (non sono piu' rossi)
 
