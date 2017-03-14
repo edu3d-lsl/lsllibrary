@@ -19,9 +19,10 @@ Spazio educativo dei corsi che si tengono in Craft, http://craft-world.org (Open
 1. Spostate a mano il file da unstaged a staged inserite il messaggio di commit e commit + push
 1. se nessuno ha cambiato quello che state committando tutto OK
 
-## Non fast forward (conflitto) occorre fare un rebase (!)
+## Non fast forward (conflitto) dovete fare un merge!
 
 1. Fate tasto destro sul progetto team -> Pull
 1. tasto destro sui file rossi (git staging) -> Merge Tool
 1. Quando soddisfatti metteteli nella staged area (non sono piu' rossi)
+1. Ora potete fare commit and push e devono andare (a meno che qualcuno non abbia committato ancora)
 
