@@ -21,7 +21,7 @@ Spazio educativo dei corsi che si tengono in Craft, http://craft-world.org (Open
 1. Spostate a mano il file da unstaged a staged inserite il messaggio di commit e commit + push
 1. se nessuno ha cambiato quello che state committando tutto OK
 
-## Non fast forward (conflitto)
+## Non fast forward (conflitto) occorre fare un rebase (!)
 
 1. tasto destro sul progetto Team -> Synchronize i file in conflitto appaiono ROSSI
 1. Tasto destro, Open in Compare Editor (vi fa vedere tutti i punti di conflitto)
