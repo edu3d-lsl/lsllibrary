@@ -1,11 +1,7 @@
 # lsllibrary
 Condivisione di script fatti con LSLForge
 
-Spazio educativo dei corsi che si tengono in Craft, http://craft-world.org (OpenSim grid).
-<<<<<<< Upstream, based on origin/master
-----
-----
-=======
+
 
 ## come si fa a partecipare:
 
@@ -29,8 +25,3 @@ Spazio educativo dei corsi che si tengono in Craft, http://craft-world.org (Open
 1. Tasto destro add to index quando siete contenti
 1. Tasto destro "Mark as Merged"
 
-
-
-
-
->>>>>>> e7ba2c6 commit in conflitto
